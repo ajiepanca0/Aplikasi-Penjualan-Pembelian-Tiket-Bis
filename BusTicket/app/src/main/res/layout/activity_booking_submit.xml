@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.BookingSubmitActivity"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Order Your Booking "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:fontFamily="monospace"/>
+
+
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv8"
+        android:layout_marginTop="20dp"
+        android:text="Name"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvname"
+        android:background="@drawable/background_"
+        android:hint="booking name"
+        android:gravity="center"
+        android:inputType="text"
+        />
+
+
+    <TextView
+        android:id="@+id/tvphonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et_name"
+        android:layout_marginTop="25dp"
+        android:text="Phone Number"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/et_phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvphonenumber"
+        android:background="@drawable/background_"
+        android:hint="phone number"
+        android:gravity="center"
+        android:inputType="number"
+        android:focusable="false"
+        />
+
+    <TextView
+        android:id="@+id/tv_tujuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_phonenumber"
+        android:layout_marginTop="20dp"
+        android:text="Destination  :"
+        android:textColor="#04D9F4"
+        />
+
+    <TextView
+        android:id="@+id/tv_isi_tujuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_phonenumber"
+        android:layout_marginTop="20dp"
+        android:text="Isi Tujuan"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_jamkeberangkatan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_isi_tujuan"
+        android:layout_marginTop="20dp"
+        android:text="hours of departure  :"
+        android:textColor="#04D9F4"
+        />
+
+    <TextView
+        android:id="@+id/tv_isi_jamkeberangkatan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_isi_tujuan"
+        android:layout_marginTop="20dp"
+        android:text="Isi jam keberangkatam"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tv_tanggalKeberangkatan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_isi_jamkeberangkatan"
+        android:layout_marginTop="20dp"
+        android:text="date of departure  :"
+        android:textColor="#04D9F4"
+        />
+
+    <TextView
+        android:id="@+id/tv_isi_tanggalkeberangkatan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_tanggalKeberangkatan"
+        android:layout_marginTop="10dp"
+        android:text="Isi tanggal keberangkatam"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tv_namebus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_isi_tanggalkeberangkatan"
+        android:layout_marginTop="20dp"
+        android:text="Bus name  :"
+        android:textColor="#04D9F4"
+        />
+
+    <TextView
+        android:id="@+id/tv_isi_namebus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_namebus"
+        android:layout_marginTop="10dp"
+        android:text="isi Bus name"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_isi_namebus"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:text="Price  "
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tvpriceticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_price"
+        android:layout_marginTop="20dp"
+        android:text="Price Ticket  :"
+        android:textColor="#04D9F4"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_isipriceticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_price"
+        android:layout_marginTop="20dp"
+        android:text="-,0"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tvQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvpriceticket"
+        android:layout_marginTop="20dp"
+        android:text="Quantity  :"
+        android:textColor="#04D9F4"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp."
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_isipriceticket"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price"/>
+
+
+    <EditText
+        android:id="@+id/et_quantity"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvpriceticket"
+        android:background="@drawable/background_"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:id="@+id/tvtotalprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvQuantity"
+        android:layout_marginTop="20dp"
+        android:text="Price Total Ticket  :"
+        android:textColor="#04D9F4"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_isitotalPriceTicket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvtotalprice" />
+
+    <Button
+        android:id="@+id/CreateBooking"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_isitotalPriceTicket"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/background_2"
+        android:text="Booking Now !"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/white"
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

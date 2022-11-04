@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.CreateDepartureActivity"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/tv10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Create Departure Schedule"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tvid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Id Schedule"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/tv10"
+        android:layout_marginTop="25dp"
+        />
+
+    <EditText
+        android:id="@+id/Idschedule_Create"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvid"
+        android:background="@drawable/background_"
+        android:hint="destination"
+        android:gravity="center"
+        android:inputType="number"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tvdestination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/Idschedule_Create"
+        android:layout_marginTop="25dp"
+        android:text="Destination"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/Destination_Create"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvdestination"
+        android:background="@drawable/background_"
+        android:hint="destination"
+        android:gravity="center"
+        android:inputType="text"
+        />
+
+
+    <TextView
+        android:id="@+id/tvnamebus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/Destination_Create"
+        android:layout_marginTop="25dp"
+        android:text="Name Bus"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/BusName_Create"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvnamebus"
+        android:background="@drawable/background_"
+        android:hint="bus"
+        android:gravity="center"
+        android:inputType="text"
+        />
+
+
+    <TextView
+        android:id="@+id/tvdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/BusName_Create"
+        android:layout_marginTop="25dp"
+        android:text="Departure Date"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/Date_Create"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvdate"
+        android:background="@drawable/background_"
+        android:hint="destination"
+        android:gravity="center"
+        android:contextClickable="true"
+        />
+
+    <TextView
+        android:id="@+id/tvtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/Date_Create"
+        android:layout_marginTop="25dp"
+        android:text="Departure Time "
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/time_Create"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvtime"
+        android:background="@drawable/background_"
+        android:hint="destination"
+        android:gravity="center"
+        />
+
+
+    <TextView
+        android:id="@+id/tvprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/time_Create"
+        android:layout_marginTop="25dp"
+        android:text="Price Ticket "
+        android:textColor="@color/black"
+        />
+
+
+
+
+    <EditText
+        android:id="@+id/price_Create"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvprice"
+        android:background="@drawable/background_"
+        android:hint="Rp...."
+        android:gravity="center"
+        android:inputType="number"
+        />
+
+
+    <Button
+        android:id="@+id/Create_departure_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/price_Create"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/background_2"
+        android:text="Create"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/white"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
